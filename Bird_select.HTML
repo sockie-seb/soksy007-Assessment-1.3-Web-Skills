@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Bird select</title>
+
+    <link rel="stylesheet" href="Bird_select-styles.css">
+
+</head>
+<body>
+
+    <main>
+        <img id="image" src="http://www.outgrabe.net/bird00.jpg" alt="Pardalote by fir0002 (CC-by-NC)">
+        <p id="description">Pardalote by fir0002 (CC-by-NC)</p>
+
+        <div class="button">
+            <button onclick="bird_select('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)')">Pardalote</button>
+            <button onclick="bird_select('http://www.outgrabe.net/bird01.jpg', 'Purple swamp hen by Toby Hudson (CC-by-SA)')">Purple Swamp Hen</button>
+            <button onclick="bird_select('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by JJ Harrison (CC-by-SA)')">White-headed Stilt</button>
+            <button onclick="bird_select('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Peter Jacobs (CC-by-SA)')">Inland Thornbill</button>
+            <button onclick="bird_select('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by JJ Harrison (CC-by-SA)')">Rose Robin</button>
+        </div>
+    </main>
+
+    <script>
+        function bird_select(image_address, alt_description) {
+            document.getElementById('image').src = image_address;
+            document.getElementById('description').innerText = alt_description;
+            
+        }
+    </script>
+
+</body>
+</html>
